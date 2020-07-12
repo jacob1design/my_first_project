@@ -1,0 +1,15 @@
+{% extends 'top.html' %}
+{%block content %}
+<div class="container">
+    <p>bienvenue dans E-market</p>
+    <p>creer ton produit par ici</p>
+    <form action="{% url 'save_product' %}" enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="envoyer"/>
+    </form>
+    {% if envoi %}
+    votre produit a ete bien enregistrer
+    {% endif %}
+</div>
+{% endblock content %}

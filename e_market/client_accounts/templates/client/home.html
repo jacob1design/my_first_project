@@ -1,0 +1,12 @@
+{% extends 'top.html' %}
+
+{% block content %}
+<div class="container">
+{% for product in produit %}
+{{product.categorie}}
+<img class="cover" src="{{product.cover.url}}"/> <br/>
+{{ product.nom|linebreaks}}
+{% endfor %}
+</div>
+
+{% endblock content %}
