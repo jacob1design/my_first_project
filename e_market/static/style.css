@@ -1,66 +1,3 @@
-.products_scroll_container
-{
-    display: flex;
-    overflow-x: auto;
-    align-items: center;
-    flex: 2;
-}
-.products_grid_container
-{
-    display: grid;
-    overflow-x: scroll;
-}
-.produits
-{
-    display: flex;
-    float: left;
-    overflow: hidden;
-}
-.noms_produits
-{
-    float: right;
-    margin-top: 30%;
-    margin-right: 5%;
-    position: absolute;
-    right: 10px;
-    
-}
-.produit_name1
-{
-    display: inline-block;
-    margin-left: 30%;
-}
-a
-{
-    color: white;
-}
-.name1
-{
-    margin-left: 30px;
-}
-.plus
-{
-    color: white;
-    text-transform: 8px;
-    text-align: center;
-    width: 30%;
-    float: right;
-    margin-top: 37%;
-    margin-right: 2%;
-    position: absolute;
-    right: 10px;
-    background-color: rgb(197, 145, 145);
-    height: 25px; 
-}
-.text-danger
-{
-    text-align: center;
-    margin-left: 110px;
-    border: 2px solid rgb(238, 110, 110);
-    width: 120px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
 .cover
 {
     overflow: hidde;
@@ -68,15 +5,4 @@ a
     width: 150px;
     height: 150px;
 
-}
-.plus2
-{
-    text-align: center;
-    background-color: rgb(197, 145, 145); 
-    width: 80px;
-    margin-left: 30px;
-}
-a:hover
-{
-    color: red;
 }
