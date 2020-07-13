@@ -1,8 +1,12 @@
 .cover
 {
-    overflow: hidde;
+    display: flex;
     overflow-x: scroll;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 120px;
 
+}
+.container
+{
+    background-color: rgb(245, 245, 234);
 }
