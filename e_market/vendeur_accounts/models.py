@@ -1,5 +1,6 @@
 from django.db import models
 import uuid
+#import datetime
 
 # Create your models here.
 class Categorie(models.Model):
@@ -14,7 +15,7 @@ class Produit(models.Model):
     nom = models.CharField(max_length=15)
     description = models.TextField()
     prix = models.DecimalField(max_digits=5, decimal_places=2)
-    cover = models.ImageField(upload_to="photo/",null=True)
+    cover = models.ImageField(upload_to="photo/")
     created_at = models.DateTimeField(auto_now=True)
     last_modification = models.DateTimeField(auto_now_add=True)
     categorie = models.ForeignKey(Categorie, models.PROTECT, null=True)

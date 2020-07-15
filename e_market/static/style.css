@@ -1,8 +1,8 @@
 .cover
 {
     display: flex;
-    overflow-x: scroll;
-    width: 125px;
-    height: 120px;
+    overflow-x: hidden;
+    max-width: 80px;
+    max-height: 150px;
 }
 

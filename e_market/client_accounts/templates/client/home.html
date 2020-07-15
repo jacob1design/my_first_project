@@ -3,9 +3,7 @@
 {% block content %}
 <div class="container">
 {% for product in produit %}
-{{product.categorie}}
-<img class="cover" src="{{product.cover.url}}"/> <br/>
-{{ product.nom|linebreaks}}
+<a href="{% url 'detail' product.uuid %}"><img class="cover" src="{{product.cover.url}}"/></a> <br/>
 {% endfor %}
 </div>
 

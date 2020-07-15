@@ -1,20 +1,20 @@
 {% extends 'top.html' %}
 
 {%block content %}
-<div class="grid-container">
+<div class="container">
     <p>bienvenue dans E-market</p>
     <p>créer ton produit par ici</p>
     <form action="{% url 'save_product' %}" enctype="multipart/form-data" method="post">
         {% csrf_token %}
         nom du produit : <span class="nom_produit">{{ form.nom }}</span>  <br/>
         déscription du produit : <span class="description_produit">{{form.description}}</span><br/>
-        image du produit : <span class="img_produit">{{form.cover}}</span><br/>
+        categorie :<br/>  <span class="categorie_produit">{{ form.categorie }}</span><br/>
+        image du produit : <br/>  <span class="img_produit">{{form.cover}}</span><br/>
         prix : <br/><span class="prix_produit">{{form.prix}}</span><br/>
-
         <button>envoyer</button>
     </form>
     {% if envoi %}
-    votre produit a ete bien enregistrer
+    <p class="if_envoi">votre produit a ete bien enregistrer</p>
     {% endif %}
 </div>
 {% endblock content %}

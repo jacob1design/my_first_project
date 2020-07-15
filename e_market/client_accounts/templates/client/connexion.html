@@ -1,0 +1,18 @@
+{% extends 'top.html' %}
+
+{% block content %}
+<h2>se connecter</h2>
+{% if error %}
+utilisateur inconnu ou mauvais mot de passe
+{% endif %}
+{% if user.is_authenticated %}
+vous etes connectes, {{user.username}}
+{% else %}
+<form method="post" action="{% url 'connexion_client' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="se connecter"/>
+</form>
+{% endif %}
+
+{% endblock content %}

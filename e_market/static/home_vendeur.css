@@ -38,3 +38,14 @@ button
     border-radius: 10px;
     border: none;
 }
+.categorie_produit
+{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.if_envoi
+{
+    color: rgb(226, 171, 100);
+    text-align: center;
+}
